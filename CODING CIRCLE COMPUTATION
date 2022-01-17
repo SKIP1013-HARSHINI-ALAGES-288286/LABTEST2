@@ -1,0 +1,28 @@
+package labtest2; //CircleComputation
+import java.util.*;
+class labtest2a {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc = new Scanner(System.in);
+
+double radius;
+float diameter;
+float area;
+float circumference;
+
+System.out.print("Please enter radius: ");
+radius =(float)sc.nextDouble();
+
+diameter =(float)( 2.0 * radius);
+area = (float)(Math.PI * radius * radius);
+circumference =(float)( 2.0 * Math.PI * radius);
+
+System.out.printf("Diameter of the circle is: %.2f" , diameter);
+System.out.println(" ");
+System.out.printf("Area of the circle is: %.2f" , area);
+System.out.println(" ");
+System.out.printf("Circumference of the circle is: %.2f" , circumference);
+	}
+
+}
