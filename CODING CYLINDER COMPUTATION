@@ -1,0 +1,37 @@
+package labtest2;//CylinderComputation
+import java.util.*;
+class labtest2b {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner (System.in);
+		
+		float baseArea;
+		double radius;
+		double height;
+		float diameter;
+		float volume;
+		float surfaceArea;
+		
+		
+		System.out.print("Please enter radius: ");
+		radius =(float)sc.nextDouble();
+
+		System.out.print("Please enter height: ");
+		height =(float)sc.nextDouble();
+		
+		baseArea =(float)( Math.PI * radius * radius);
+		surfaceArea =(float) (2.0 * Math.PI * radius + 2.0 * baseArea);
+		volume =(float)( baseArea * height);
+
+		System.out.printf("Base area of the cylinder is: %.2f" , baseArea);
+		System.out.println(" ");
+		System.out.printf("Surface area of the cylinder is: %.2f" , surfaceArea);
+		System.out.println(" ");
+		System.out.printf("Volume of the cylinder is: %.2f" , volume);
+			}
+
+		
+
+		
+	}
