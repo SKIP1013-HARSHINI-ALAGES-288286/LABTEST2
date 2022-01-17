@@ -1,0 +1,38 @@
+package assignment;//
+import java.util.*;
+class quiz1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc= new Scanner (System.in);
+
+int n;
+
+System.out.print("Enter the size : ");
+n = sc.nextInt();
+
+System.out.println("* | 1 2 3 4 5 6 7 8 9 10");
+System.out.println("-------------------------------------------");
+int row = 1, column = 1;
+int[][] arrMultipleTable = new int[n][10];
+
+for(int a = 0; a < arrMultipleTable.length; a++)
+{
+   for(int b = 0; b < arrMultipleTable[a].length; b++)
+   {
+      arrMultipleTable[a][b] = row * column;
+      column = column + 1;
+   }
+   row = row + 1;
+   column = 1;
+}
+for(int a = 0; a < arrMultipleTable.length; a++)
+{
+	System.out.printf("%1$d|", a+1);
+   for(int b = 0; b < arrMultipleTable[a].length; b++)
+   {
+	  System.out.print(" " + arrMultipleTable[a][b] + "  ");
+   }
+   System.out.print("\n");
+}
+}
